@@ -18,8 +18,17 @@
     font-family: 'Segoe UI';
 }
 
-table {
-    margin-top: 10px;
-    border: 1;
-    margin: 30px auto;
+#tabla{
+    margin: auto;
+    text-align: left;
+}
+
+th {
+    border-width: 1px;
+    border-style: solid;
+}
+
+td {
+    border-width: 1px;
+    border-style: solid;
 }

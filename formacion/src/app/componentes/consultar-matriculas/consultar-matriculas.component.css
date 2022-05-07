@@ -20,3 +20,18 @@
     text-align: center;
     font-family: 'Segoe UI';
 }
+
+#tabla{
+    margin: auto;
+    text-align: left;
+}
+
+th {
+    border-width: 1px;
+    border-style: solid;
+}
+
+td {
+    border-width: 1px;
+    border-style: solid;
+}
