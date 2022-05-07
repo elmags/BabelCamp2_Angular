@@ -1,0 +1,22 @@
+.boton {
+    padding: 8px;
+    border-width: 1px;
+    margin-right: 20px;
+}
+
+.botonC {
+    padding: 8px;
+    border-width: 1px;
+    margin-left: 10px;
+    background-color: rgb(180, 180, 180);
+}
+
+.caja {
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 25px 10px;
+    text-align: center;
+    font-family: 'Segoe UI';
+}

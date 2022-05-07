@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="container">
+    <h2>Buscar alumnos por curso</h2>
+    Fecha de inicio: <input class="boton" type="date" id="fechaInicio" name="fechaInicio" [(ngModel)]="fechaInicio" >
+    Fecha final: <input class="boton" type="date" id="FechaFin" name="FechaFin" [(ngModel)]="fechaFin" >
+    <input class="botonC" type="button" (click)="getMovimientos()" value="Consultar" />
+
+    <br><br>
+    
+    <p>Saldo actual: {{saldo}}</p>
+
+    <table class="table table-striped" id="tabla" *ngIf="movimientos">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Cantidad</th>
+          <th>Operación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of movimientos">
+          <td>{{m.fecha}}</td>
+          <td>{{m.cantidad}}</td>
+          <td>{{m.operacion}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="menu.jsp">Menú</a>
+  </div>
+</div>

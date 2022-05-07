@@ -1,0 +1,42 @@
+.borde {
+    padding: 15px 10px;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+.menu {
+    display:inline-block;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(180, 180, 180);
+    padding: 20px;
+}
+
+a {
+    padding: 12px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.content {
+    padding: 25px 10px;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+#tabla{
+    margin: auto;
+    text-align: left;
+}
+
+th {
+    border-width: 1px;
+    border-style: solid;
+}
+
+td {
+    border-width: 1px;
+    border-style: solid;
+}

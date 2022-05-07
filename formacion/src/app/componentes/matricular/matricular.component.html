@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="container">
+    <h2>Matricular</h2>
+    <select class="select" name="alumnos" [(ngModel)]="usuario" (change)="mostrarCursos()">
+      Alumno: <option *ngFor="let alumno of alumnos" [ngValue]="alumno.usuario">{{alumno.usuario}}</option>
+    </select>
+
+    <div *ngIf="cursos">
+      <select class="select" name="cursos" [(ngModel)]="idCurso">
+        Curso: <option *ngFor="let curso of cursos" [ngValue]="curso.idCurso">{{curso.nombre}}</option>
+      </select>
+      <br><br>
+      <input class="boton" type="button" (click)="matricular()" value="Matricular">
+    </div>
+
+  </div>
+</div>

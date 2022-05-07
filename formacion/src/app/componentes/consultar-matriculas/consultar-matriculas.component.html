@@ -1,0 +1,27 @@
+<div class="content">
+    <div class="container">
+        <h2>Consultar matriculas</h2>
+        Fecha de inicio: <input class="boton" type="date" id="fechaInicio" name="Fecha de inicio" [(ngModel)]="fechaInicio">
+        Fecha final: <input class="boton" type="date" id="FechaFin" name="Fecha final" [(ngModel)]="fechaFin">
+        <input class="botonC" type="button" (click)="matriculas()" value="Consultar" />
+    </div>
+
+    <table *ngIf="listaMatriculas">
+        <thead>
+          <tr>
+            <th>Alumno</th>
+            <th>Curso</th>
+            <th>Fecha de inicio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let m of listaMatriculas">
+            <td>{{ m.alumno.nombre }}</td>
+            <td>{{ m.curso.nombre }}</td>
+            <td>{{ m.curso.fechaInicio }}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
